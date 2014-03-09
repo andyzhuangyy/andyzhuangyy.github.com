@@ -21,9 +21,9 @@ tags: [建站]
 
 ---
 ## 2. 建站方式
-本文主要介绍基于[jekyll bootstrap](http://jekyllbootstrap.com/)建立一个轻量级博客的方式。至于其他框架，例如WordPress，可以参考Mac君的[趣谈个人建站](http://macshuo.com/?p=547)。提到Mac君，那是好人一个，所写的[《MacTalk人生元编程》](http://item.jd.com/11398297.html)可谓是站在技术和人文的十字路口，指导我们这些码农们努力前行啊。
+这里介绍基于[jekyll bootstrap](http://jekyllbootstrap.com/)建立一个轻量级博客的方式。至于其他框架，例如WordPress，可以参考Mac君的[趣谈个人建站](http://macshuo.com/?p=547)。提到Mac君，那是好人一个，所写的[《MacTalk人生元编程》](http://item.jd.com/11398297.html)可谓是站在技术和人文的十字路口，指导我们这些码农们努力前行啊。
 
-[阮一峰](http://www.ruanyifeng.com)曾经在其个人博客[《搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门》](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)一文中提到了如何通过**github**的[github Pages ](http://pages.github.com)功能建立个人博客。
+另外，[阮一峰](http://www.ruanyifeng.com)曾经在其个人博客[《搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门》](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)一文中提到了如何通过**github**的[github Pages ](http://pages.github.com)功能建立个人博客。
 
 本博客是借助[jekyll bootstrap](http://jekyllbootstrap.com/)所建立的，如下是其官网首页的引文：
 
