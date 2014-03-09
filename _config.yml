@@ -4,18 +4,23 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
-
+#paginate: 5
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Zhuang Yongyao blog 
-tagline: Site Tagline
+title : 庄永耀
+tagline: zhuangyongyao 
+#Site Tagline
+keywords: [zhuangyongyao,庄子,庄永耀,庄永耀的博客,zhuangyongyao的博客,c++,极客,程序员,互联网,技术,移动互联网]
+description: 庄永耀的博客,热爱技术热爱互联网,专注于c++,服务器编程,有兴趣于移动app 
 author :
-  name : Zhuang Yongyao
+  name : 庄永耀
   email : andyzyy@gmail.com
-  github : andyzhuangyy
-  twitter : andyzyy
-  feedburner : feedname
+  github : https://github.com/andyzhuangyy
+  twitter : https://twitter.com/andyzyy
+  weibo: http://weibo.com/yongyaozhuang
+  feedburner : atom.xml 
+  #feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -25,7 +30,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://andyzhuangyy.github.io
+production_url : http://zhuangyongyao.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -82,16 +87,16 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
+      short_name : zhuangyongyao
+    #livefyre :
+      #site_id : 123
+    #intensedebate :
+      #account : 123abc
+    #facebook :
+      #appid : 123
+      #num_posts: 5
+      #width: 580
+      #colorscheme: light
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
