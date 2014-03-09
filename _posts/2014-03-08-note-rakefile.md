@@ -2,7 +2,7 @@
 layout: post
 title: "Note: Rakefile"
 description: "Rakefile的学习笔记"
-category: "note"
+category: "notes"
 tags: [ruby]
 ---
 {% include JB/setup %}

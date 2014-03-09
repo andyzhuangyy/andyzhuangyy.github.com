@@ -4,6 +4,7 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
+markdown: rdiscount
 #paginate: 5
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -12,7 +13,7 @@ title : 庄永耀
 tagline: zhuangyongyao 
 #Site Tagline
 keywords: [zhuangyongyao,庄子,庄永耀,庄永耀的博客,zhuangyongyao的博客,c++,极客,程序员,互联网,技术,移动互联网]
-description: 庄永耀的博客,热爱技术热爱互联网,专注于c++,服务器编程,有兴趣于移动app 
+description: 庄永耀的博客,热爱技术热爱互联网热爱生活,专注于c++,服务器编程,有兴趣于移动app 
 author :
   name : 庄永耀
   email : andyzyy@gmail.com
@@ -108,7 +109,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-48806630-1'
     getclicky :
       site_id : 
     mixpanel :

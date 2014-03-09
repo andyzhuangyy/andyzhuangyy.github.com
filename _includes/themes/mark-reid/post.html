@@ -9,20 +9,32 @@
   {{ content }}
 
   <address class="signature">
-    <a class="author" href="{{ HOME_PATH }}">{{ site.author.name }}</a> 
+    <a class="author" href="{{ HOME_PATH }}">回到首页</a> 
     <span class="date">{{ page.date | date_to_long_string }}</span>
     <span class="location">{{ page.location }}</span>
   </address>
   
   <div class="prev-next">
   {% if page.next %}
-    <a href="{{ page.next.url }}" class="next" title="{{ page.next.title }}">Next Post &rarr;</a>
+    <a href="{{ page.next.url }}" class="next" title="{{ page.next.title }}">下一篇  &rarr;</a>
   {% endif %}
   {% if page.previous %}
-    <a href="{{ page.previous.url }}" class="prev" title="{{ page.previous.title }}">&larr; Earlier Post</a>
-  {% endif %}
-  </div>
+    <a href="{{ page.previous.url }}" class="prev" title="{{ page.previous.title }}">&larr; 上一篇 </a>
+  {% endif %} </div> 
   
+ <br>
+ <!-- JiaThis Button BEGIN -->
+ <div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_icons_1"></a>
+    <a class="jiathis_button_icons_2"></a>
+    <a class="jiathis_button_icons_3"></a>
+    <a class="jiathis_button_icons_4"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+    <a class="jiathis_counter_style"></a>
+ </div>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1394235904237984" charset="utf-8"></script>
+ <!-- JiaThis Button END -->
 </div><!-- End Page -->
 
 {% include JB/comments %}
