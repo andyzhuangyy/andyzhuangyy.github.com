@@ -104,8 +104,9 @@ jekyllbootstrap 中默认嵌入的社会化评论系统是[disqus](http://disqus
 
 * 网站内容分类
 * resume
-* rss、github、weibo 外链
+* rss
 * 文章推荐
 * 代码高亮
 * 添加静态搜索 
-   
+
+最重要的一件事，那就是坚持写下去！
