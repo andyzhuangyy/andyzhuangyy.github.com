@@ -92,8 +92,20 @@ jekyllbootstrap 中默认嵌入的社会化评论系统是[disqus](http://disqus
       short_name : YOURNAME
       
 ---
-## 4. 
+## 4. 其他参考资料
+* <http://yeswejekyll.com/>, 一个国外的网站，重点讲解了Jekyll的框架，和后续的网站设计。
+* <http://higrid.net/c-art-static_search_engine.htm> 为 jekyll 静态博客添加静态搜索——无数据库实现站内静态网页搜索。
+* <http://zyzhang.github.io/blog/2012/08/31/highlight-with-Jekyll-and-Pygments/> 用Jekyll和Pygments配置代码高亮。
+* <http://octopress.org/> 其主页上说用了Octopress搭建基于Jekyll的网站，就不用担心自己写 HTML templates, CSS, Javascripts了。
 
 ---
-## 5. 结束语
+## 5. TODO
+搭建完成，还有很多事情要做。
+
+* 网站内容分类
+* resume
+* rss、github、weibo 外链
+* 文章推荐
+* 代码高亮
+* 添加静态搜索 
    
