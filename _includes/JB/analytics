@@ -1,6 +1,7 @@
 {% if site.safe and site.JB.analytics.provider and page.JB.analytics != false %}
 
 {% case site.JB.analytics.provider %}
+{% include JB/analytics-providers/baidu %}
 {% when "google" %}
   {% include JB/analytics-providers/google %}
 {% when "getclicky" %}
