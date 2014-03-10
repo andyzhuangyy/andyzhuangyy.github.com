@@ -12,5 +12,13 @@ tagline: Supporting tagline
   {% endfor %}
 </ul>
 
+---
+
+
+[**点击这里订阅**](http://zhuangyongyao.com/atom.xml)
+---
+
+
+---
 ## To-Do
 a lot of things to do.
