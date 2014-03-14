@@ -174,7 +174,7 @@ tags: [c++,多线程]
 		if(0 != _handle)
 		{
 			this->_status = T_STOPPING;
-			print("Waiting For the thread stopping... tid=%d\n",_tid);
+			printf("Waiting For the thread stopping... tid=%d\n",_tid);
 			WaitForSingleObject(_handle,INFINITE);
 			CloseHandle(_handle);
 			_handle = 0;
