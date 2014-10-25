@@ -1,11 +1,10 @@
 ---
 layout: page
-title: 庄永耀的网志
+title: 记录点点滴滴
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-记录生活中的点点滴滴...
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
@@ -13,13 +12,13 @@ tagline: Supporting tagline
 </ul>
 
 ---
+## TODO
 
+* a lot of things to do. change theme...
 
-[**点击这里订阅**](http://zhuangyongyao.com/atom.xml)
+---
+
+[**订阅**]({{ BASE_PATH }}atom.xml)
 ---
 
 
----
-## To-Do
-a lot of things to do.
-change theme...

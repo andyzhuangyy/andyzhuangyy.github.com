@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "about"
+title: 关于我
 description: "个人信息"
 ---
 {% include JB/setup %}

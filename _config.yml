@@ -9,7 +9,7 @@ markdown: rdiscount
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 庄永耀
+title : 庄子的记录
 tagline: zhuangyongyao 
 #Site Tagline
 keywords: [zhuangyongyao,庄子,庄永耀,庄永耀的博客,zhuangyongyao的博客,c++,极客,程序员,互联网,技术,移动互联网]
@@ -17,11 +17,19 @@ description: 庄永耀的博客,热爱技术热爱互联网热爱生活,专注�
 author :
   name : 庄永耀
   email : andyzyy@gmail.com
-  github : https://github.com/andyzhuangyy
-  twitter : https://twitter.com/andyzyy
-  weibo: http://weibo.com/yongyaozhuang
-  feedburner : atom.xml 
+  github : andyzhuangyy
+  twitter : andyzyy
+  weibo: yongyaozhuang
+  #feedburner : atom.xml 
   #feedname
+
+# site custom configuration
+site_custom :
+  archive : 文章
+  categories : 类别
+  tags : 标签
+  pages : 其他页
+  about : 关于我
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -124,7 +132,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false
+    provider : jiathis
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
