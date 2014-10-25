@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2014北京黑客马拉松 - 1"
+title: "2014北京黑客马拉松1"
 description: "参加segment fault hackaton 的活动"
 category: "随感" 
 tags: ["编程"]
