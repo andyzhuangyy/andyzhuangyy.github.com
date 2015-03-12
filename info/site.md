@@ -31,26 +31,21 @@ description: "个人信息"
 ## 专业技能
 
 * 编程语言
-    * 熟练 C、C++
+    * 熟练 C、C++ 
     * 熟悉 Python、Java、JS、CSS、HTML
     * 可编写 Makefile、Shell
-
 * 操作系统
     * 熟悉 UNIX/Linux 环境编程、网络编程
     * 熟悉 Windows MFC/ActiveX 编程
-
 * Web 服务器
     * apache、nginx 
-    
 * 数据库
     * SQL: 熟悉 MySQL
     * NoSQL: 了解 MonoDB
- 
 * 框架
     * C++：Boost、muduo
     * Python：pylons
     * JS: 曾使用过 ExtJS、jQuery
-
 * 开发工具
     * vim
 
@@ -69,7 +64,7 @@ description: "个人信息"
 ===
 ## 自我评价
 1. 学习能力强，热爱互联网行业，兴趣广泛，善于交流，做事投入。
-2. 广泛的兴趣让自己时间分散，涉猎广泛却不深入，常有浮躁心态。
+2. 广泛的兴趣让自己时间分散，涉猎广泛却不够深入，常有浮躁心态。
 
 ===
 ## 爱好
