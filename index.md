@@ -18,7 +18,5 @@ tagline: Supporting tagline
 
 ---
 
-[**订阅**]({{ BASE_PATH }}atom.xml)
----
 
 

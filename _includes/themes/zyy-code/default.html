@@ -52,9 +52,23 @@
 					<h4>联系我</h4>
 					<ul>
                         <li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email"> <a href="mailto:{{site.author.email}}">{{ site.author.email }}</a></span></address></li>
-						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
-						<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
-						<li class="rss"><a href="/atom.xml">Subscribe to RSS Feed</a></li>
+                        <li class="contact">
+                            <a href="http://github.com/{{ site.author.github }}/" rel="me" >
+                                <img src="{{ASSET_PATH}}/pic/github_logo.png" alt="http://github.com/{{ site.author.github }}" width="50" height="50"/>
+                            </a>
+                            &nbsp;
+                            <a href="{{ASSET_PATH}}/pic/wechat.png" rel="me" >
+                                <img src="{{ASSET_PATH}}/pic/wechat_logo.png " width="50" height="50"/>
+                            </a>
+                            &nbsp;
+                            <a href="http://twitter.com/{{ site.author.twitter }}/" rel="me" >
+                                <img src="{{ASSET_PATH}}/pic/twitter_logo.png" alt="http://twitter.com/{{ site.author.twitter }}/" width="50" height="50"/>
+                            </a>
+                            &nbsp;
+                            <a href="{{BASE_PATH}}/atom.xml" rel="me" >
+                                <img src="{{ASSET_PATH}}/pic/rss_logo.png" width="50" height="50"/>
+                            </a>
+                        </li>
 					</ul>
 				</div><!-- misc -->
                 <span class="copyright">
