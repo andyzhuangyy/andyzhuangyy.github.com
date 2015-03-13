@@ -55,7 +55,7 @@ h6 {
   font-weight: bold;
 }
 h1, .h1 {
-  font-size: 42px;
+  font-size: 38px;
   line-height: 52px;
   margin-top: 52px;
   margin-bottom: 26px;
@@ -65,20 +65,20 @@ h2, .h2 {
   font-size: 32px;
   line-height: 42px;
   margin-top: 42px;
-  margin-bottom: 26px;
+  margin-bottom: 13px;
   letter-spacing: -1px;
 }
 h3, .h3 {
   font-size: 26px;
   line-height: 26px;
   margin-top: 26px;
-  margin-bottom: 26px;
+  margin-bottom: 10px;
 }
 h4, .h4 {
   font-size: 20px;
   line-height: 26px;
   margin-top: 26px;
-  margin-bottom: 26px;
+  margin-bottom: 10px;
 }
 p,
 ul,
@@ -137,8 +137,8 @@ No styleguide reference.
 */
 @font-face {
   font-family: 'junctionregularRegular';
-  src: url('/assets/themes/the-minimum/font/Junction-webfont.eot');
-  src: url('/assets/themes/the-minimum/font/Junction-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/themes/the-minimum/font/Junction-webfont.woff') format('woff'), url('/assets/themes/the-minimum/font/Junction-webfont.ttf') format('truetype'), url('/assets/themes/the-minimum/font/Junction-webfont.svg#junctionregularRegular') format('svg');
+  src: url('/assets/themes/zyy-code/font/Junction-webfont.eot');
+  src: url('/assets/themes/zyy-code/font/Junction-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/themes/zyy-code/font/Junction-webfont.woff') format('woff'), url('/assets/themes/zyy-code/font/Junction-webfont.ttf') format('truetype'), url('/assets/themes/zyy-code/font/Junction-webfont.svg#junctionregularRegular') format('svg');
   font-weight: normal !important;
   font-style: normal;
 }
@@ -229,13 +229,13 @@ pre {
 /* MAIN
 --------------------------------------------------------------------------------- */
 .unit-article header {
-  background: url('/assets/themes/the-minimum/skin/100-90-5-monochrome.png');
+  background: url('/assets/themes/zyy-code/skin/100-90-5-monochrome.png');
   background-repeat: repeat;
   background-position: 0 0;
   background-color: #BADA55;
-  margin-bottom: 1.625em;
-  padding-top: 1.625em;
-  padding-bottom: 1.625em;
+  margin-bottom: 0.625em;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
 }
 .unit-article header h1 {
   color: #2d2d2d;
@@ -407,7 +407,7 @@ pre {
   text-transform: capitalize;
 }
 .unit-article .unit-foot {
-  background: url('/assets/themes/the-minimum/skin/100-90-5-monochrome.png') repeat 0 0 #4d4d4d;
+  background: url('/assets/themes/zyy-code/skin/100-90-5-monochrome.png') repeat 0 0 #4d4d4d;
   color: #fafafa;
   padding-top: 1.625em;
   padding-bottom: 1.625em;
@@ -433,7 +433,7 @@ pre {
 }
 /* post & page */
 .layout-page .tag_box {
-  background: url('/assets/themes/the-minimum/skin/100-90-5-monochrome.png') repeat 0 0 #999999;
+  background: url('/assets/themes/zyy-code/skin/100-90-5-monochrome.png') repeat 0 0 #999999;
   padding: 0.8125em;
   list-style: none;
   -webkit-border-radius: 3px;

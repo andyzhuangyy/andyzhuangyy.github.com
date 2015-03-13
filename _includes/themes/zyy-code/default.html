@@ -31,6 +31,27 @@
                         <li class="tag"><a  href="/tags.html">{{ site.site_custom.tags }}</a></li>
                         <li class="page"><a  href="/pages.html">{{ site.site_custom.pages }}</a></li>
                         <li class="about"><a  href="/info/site.html">{{ site.site_custom.about }}</a></li>
+                        <li class="contact">
+
+                            <a href="mailto:{{site.author.email}}" rel="me" >
+                                <img src="{{ASSET_PATH}}/pic/email_logo.png" alt="andyzyy@gmail.com" width="35" height="35"/>
+                            </a>
+                            <a href="http://github.com/{{ site.author.github }}/" rel="me" >
+                                <img src="{{ASSET_PATH}}/pic/github_logo.png" alt="http://github.com/{{ site.author.github }}" width="35" height="35"/>
+                            </a>
+                            <a href="{{ASSET_PATH}}/pic/wechat.png" rel="me" >
+                                <img src="{{ASSET_PATH}}/pic/wechat_logo.png " width="35" height="35"/>
+                            </a>
+                            <a href="tel:{{ site.author.phone }}" rel="me" >
+                                <img src="{{ASSET_PATH}}/pic/phone_logo.gif " width="35" height="35"/>
+                            </a>
+                            <a href="http://twitter.com/{{ site.author.twitter }}/" rel="me" >
+                                <img src="{{ASSET_PATH}}/pic/twitter_logo.png" alt="http://twitter.com/{{ site.author.twitter }}/" width="35" height="35"/>
+                            </a>
+                            <a href="{{BASE_PATH}}/atom.xml" rel="me" >
+                                <img src="{{ASSET_PATH}}/pic/rss_logo.png" width="35" height="35"/>
+                            </a>
+                        </li>
 					</ul>
 				</nav>
 			</div><!-- unit-inner -->
@@ -48,6 +69,7 @@
 	<footer class="the-footer">
 		<div class="unit-foot">
 			<div class="unit-inner unit-foot-inner">
+                <!--
 				<div class="misc vcard">
 					<h4>联系我</h4>
 					<ul>
@@ -70,7 +92,9 @@
                             </a>
                         </li>
 					</ul>
-				</div><!-- misc -->
+				</div>
+                -->
+                <!-- misc -->
                 <span class="copyright">
                     © <a href="/info/site.html">{{ site.author.name }}</a> 2014
                     (<a rel="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Some rights reserved</a>).			
