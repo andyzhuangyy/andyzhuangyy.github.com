@@ -64,9 +64,10 @@ h1, .h1 {
 h2, .h2 {
   font-size: 28px;
   line-height: 42px;
-  margin-top: 42px;
-  margin-bottom: 13px;
+  margin-top: 26px;
+  margin-bottom: 10px;
   letter-spacing: -1px;
+  background-color: #BADA55;
 }
 h3, .h3 {
   font-size: 22px;
