@@ -15,17 +15,18 @@
                     <hr>
 					<div class="meta">
 						<p class="date-publish">
-							 
+							<span>写于 </span>
 							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
-							<span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
+							<span class="year">{{ page.date | date: '%Y' }}.</span>
+							<span class="month">{{ page.date | date: '%m' }}.</span>
 							<span class="day">{{ page.date | date: '%d' }}</span>
-							<span class="year">{{ page.date | date: '%Y' }}</span>
+
 							</date>
 						</p>
 						<ul class="list-category list-linear">
 							<li class="list-head">
-                            类别: 
-                            </li>
+                            类别:
+              </li>
 							{% assign categories_list = page.categories %}
 							{% include JB/categories_list %}
 						</ul>
@@ -40,10 +41,10 @@
 					<div class="social">
                        {% include JB/sharing %}
 					</div>
-					
+
 					{% include JB/comments %}
 				</div><!-- misc-content -->
-				
+
 			</div><!-- bd -->
 			<footer class="unit-foot">
 				<div class="unit-inner unit-foot-inner">

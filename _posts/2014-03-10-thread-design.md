@@ -36,7 +36,7 @@ tags: [c++,多线程]
     - 获取线程号
 * 满足面向对象程序设计：
 	- 可以继承，子类自动获得父类线程类的功能。
-	- 允许子类**override**线程处理函数，实现其功能。 
+	- 允许子类**override**线程处理函数，实现其功能。
 
 3. 设计与实现
 ---
@@ -81,7 +81,7 @@ tags: [c++,多线程]
 
 		//tid
 		unsigned int _tid;
-		
+
 		//tname
 		string _name;
 
@@ -93,7 +93,7 @@ tags: [c++,多线程]
 * 公有方法：
 
 {% highlight c++ linenos %}
-	//构造函数		
+	//构造函数
 	explicit BaseThread(string tname);
 
 	//析构函数
@@ -101,16 +101,16 @@ tags: [c++,多线程]
 
 	//线程开始，需要返回线程句柄或线程描述符。
 	unsigned int Start();
-	
+
 	//线程结束，有可能会被阻塞。
 	void Stop();
-	
+
 	//线程中循环执行的函数，可以被override
 	virtual void Run(){};
-	
+
 	//获取线程状态
 	inline ThreadStatus GetState()	const{	return this->_status;}
-	
+
 	//获取线程号
 	inline unsigned int GetTid() const {return _tid;}
 {% endhighlight %}
@@ -118,13 +118,13 @@ tags: [c++,多线程]
 * 私有方法：
 
 {% highlight c++ linenos %}
-	//拷贝构造函数，设为私有，使该类的对象不可被拷贝 
+	//拷贝构造函数，设为私有，使该类的对象不可被拷贝
 	BaseThread(const BaseThread&);
-	
+
 	//赋值操作符，设为私有，使该类的对象不可被拷贝
 	BaseThread& operator=(const BaseThread&);
 
-	//线程函数的入口地址，参数为当前线程类的 this 指针		
+	//线程函数的入口地址，参数为当前线程类的 this 指针
 	static unsigned __stdcall StartAddress(void* para);
 {% endhighlight %}
 
@@ -140,7 +140,7 @@ tags: [c++,多线程]
 {% endhighlight %}
 
 * **Start()** 。使用 **\_beginthreadex** 函数建立线程，并执行，获取**线程号**，设置线程状态，返回线程句柄并保存。如果调用该接口时，线程已经启动，则直接返回线程句柄。
-	
+
 {% highlight c++ linenos %}
 	//线程开始
 	unsigned BaseThread::Start()
@@ -160,7 +160,7 @@ tags: [c++,多线程]
 			_status = T_STOPPED;
 			printf("Thread create failure.errno=%d\n",errno);
 		}
-	
+
 		return (unsigned)_handle;
 	}
 {% endhighlight %}
@@ -170,7 +170,7 @@ tags: [c++,多线程]
 {% highlight c++ linenos %}
 	//线程停止
 	void BaseThread::Stop()
-	{		
+	{
 		if(0 != _handle)
 		{
 			this->_status = T_STOPPING;
@@ -188,14 +188,14 @@ tags: [c++,多线程]
 {% highlight c++ linenos %}
 	//线程入口函数
 	unsigned int __stdcall BaseThread::StartAddress(void* para)
-	{	
+	{
 		Sleep(10);
 		if(NULL == para)
 		{
 			printf("Thread \'StartAddress\'  Param is NULL \n");
 			return 0;
 		}
-		BaseThread* pthread = static_cast<BaseThread*>(para);		
+		BaseThread* pthread = static_cast<BaseThread*>(para);
 		//atomic operation
 	#if defined(_MSC_VER) && _MSC_VER>1200
 		//vc10
@@ -208,7 +208,7 @@ tags: [c++,多线程]
 		{
 			pthread->Run();
 		}
-		
+
 		return 0;
 	}
 {% endhighlight %}
@@ -227,7 +227,7 @@ tags: [c++,多线程]
 		//may block
 		this->Stop();
 	}
-{% endhighlight %} 
+{% endhighlight %}
 
 4. 使用方法
 ---
@@ -243,5 +243,5 @@ tags: [c++,多线程]
 期待和大家的交流！
 
 ---
-庄永耀 
+庄永耀
 2014-03-10
