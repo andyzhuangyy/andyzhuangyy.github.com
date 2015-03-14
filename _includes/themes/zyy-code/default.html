@@ -13,8 +13,12 @@
 	<meta name="keywords" content="{{ page.keywords }}">
 	{% endif %}
 
-  	<link rel="alternate" type="application/atom+xml" href="/atom.xml" title="RSS feed" />
+  <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="RSS feed" />
+
+	<link rel="stylesheet" href="{{ ASSET_PATH }}/font-awesome/css/font-awesome.min.css">
+
 	<link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
@@ -31,27 +35,7 @@
                         <li class="tag"><a  href="/tags.html">{{ site.site_custom.tags }}</a></li>
                         <li class="page"><a  href="/pages.html">{{ site.site_custom.pages }}</a></li>
                         <li class="about"><a  href="/info/site.html">{{ site.site_custom.about }}</a></li>
-                        <li class="contact">
-
-                            <a href="mailto:{{site.author.email}}" rel="me" >
-                                <img src="{{ASSET_PATH}}/pic/email_logo.png" alt="andyzyy@gmail.com" width="35" height="35"/>
-                            </a>
-                            <a href="http://github.com/{{ site.author.github }}/" rel="me" >
-                                <img src="{{ASSET_PATH}}/pic/github_logo.png" alt="http://github.com/{{ site.author.github }}" width="35" height="35"/>
-                            </a>
-                            <a href="{{ASSET_PATH}}/pic/wechat.png" rel="me" >
-                                <img src="{{ASSET_PATH}}/pic/wechat_logo.png " width="35" height="35"/>
-                            </a>
-                            <a href="tel:{{ site.author.phone }}" rel="me" >
-                                <img src="{{ASSET_PATH}}/pic/phone_logo.gif " width="35" height="35"/>
-                            </a>
-                            <a href="http://twitter.com/{{ site.author.twitter }}/" rel="me" >
-                                <img src="{{ASSET_PATH}}/pic/twitter_logo.png" alt="http://twitter.com/{{ site.author.twitter }}/" width="35" height="35"/>
-                            </a>
-                            <a href="{{BASE_PATH}}/atom.xml" rel="me" >
-                                <img src="{{ASSET_PATH}}/pic/rss_logo.png" width="35" height="35"/>
-                            </a>
-                        </li>
+												{% include addons/contact.html %}
 					</ul>
 				</nav>
 			</div><!-- unit-inner -->

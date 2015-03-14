@@ -7,16 +7,16 @@ tagline: Supporting tagline
 
 <ul class="posts">
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  <!-- date_to_string -->
+    <li><span>{{ post.date | date: "%Y.%m.%d" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
 ---
 ## TODO
 
-* a lot of things to do. change theme...
+* a lot of things to do.
+* prepare to change a new job
+* learn source code
 
 ---
-
-
-

@@ -63,7 +63,7 @@ jekyllbootstrap 中默认嵌入的社会化评论系统是[disqus](http://disqus
 
 例子如下(本例中的YOURNAME需要换成您在多说创建**多说域名**时使用的名字，网站上给出的默认代码已经帮您默认写好了)：
 
-```
+{% highlight html %}
 	<!-- Duoshuo Comment BEGIN -->
 		<div class="ds-thread"></div>
 	<script type="text/javascript">
@@ -78,18 +78,20 @@ jekyllbootstrap 中默认嵌入的社会化评论系统是[disqus](http://disqus
 		})();
 		</script>
 	<!-- Duoshuo Comment END -->
-```
+{% endhighlight %}
 
 
 修改_includes/JB/comments文件，复制`when`和`include`的两行，将其中的相应内容改为`duoshuo`。
 	
 修改_config.yaml文件，找到`comments :`，将`provider`后的值改为`duoshuo`，对应的`short_name`改为在多说创建**多说域名**时使用的名字，如下：
 
+{% highlight yaml %}
 	provider : duoshuo
     disqus :
       short_name : ***
     duoshuo:
       short_name : YOURNAME
+{% endhighlight %}
       
 ---
 ## 4. 其他参考资料
@@ -98,8 +100,23 @@ jekyllbootstrap 中默认嵌入的社会化评论系统是[disqus](http://disqus
 * <http://zyzhang.github.io/blog/2012/08/31/highlight-with-Jekyll-and-Pygments/> 用Jekyll和Pygments配置代码高亮。
 * <http://octopress.org/> 其主页上说用了Octopress搭建基于Jekyll的网站，就不用担心自己写 HTML templates, CSS, Javascripts了。
 
+
+## 5. 其他技巧
+### 直接插入gist代码
+因为markdown的语法可以兼容html，在情非得已的情况下，直接查html代码。如果转帖gist的代码，直接在markdown文件中插入：
+
+{% highlight javascript %}
+    <script src="https://gist.github.com/andyzhuangyy/89fe2a2fd65a4c4e8070.js"></script>
+{% endhighlight %}
+
+可得：
+<script src="https://gist.github.com/andyzhuangyy/89fe2a2fd65a4c4e8070.js"></script>
+
+
+
+
 ---
-## 5. TODO
+## 6. TODO
 搭建完成，还有很多事情要做。
 
 * 网站内容分类

@@ -220,6 +220,7 @@ pre {
 }
 .the-header .nav-global {
   text-transform: uppercase;
+  background-color: #daf094
 }
 .the-header .nav-global .forkme {
   position: relative;
@@ -542,7 +543,7 @@ pre {
   margin-bottom: 0;
 }
 .the-header .unit-inner {
-  width: 15em;
+  width: 18em;
   margin-top: 1.625em;
   margin-bottom: 1.625em;
   margin-left: auto;
@@ -556,7 +557,7 @@ pre {
 .unit-article .entry-content,
 .unit-article .misc-content,
 .unit-article .unit-foot-inner {
-  width: 15em;
+  width: 18em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -564,7 +565,7 @@ pre {
   margin-bottom: 1.625em;
 }
 .layout-page .unit-body .unit-body-inner {
-  width: 15em;
+  width: 18em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -572,7 +573,7 @@ pre {
   margin-bottom: 1.625em;
 }
 .the-footer .unit-foot {
-  width: 15em;
+  width: 18em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -721,6 +722,8 @@ pre {
     width: 26.25em;
   }
 }
+
+
 /*
 	Tablet
 */
