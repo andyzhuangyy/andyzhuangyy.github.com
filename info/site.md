@@ -39,36 +39,36 @@ description: "个人信息"
         统一的批处理命令生成工具；
         通信自测试脚本（Python）；
         web 测试页；
-        
+
 * VC++，Linux C++，网络编程，Makefile，Python
 
 
 ##### 某 Web 服务器功能升级（2015/1 ~ 2015/1）
 
-    某 web 服务器的一个新增数据修改功能，在 model 层封装 mysql的 C 语言接口；
+    某 web 服务器的一个新增数据修改功能，在 model 层封装 mysql 的 C 语言接口；
     编写服务升级打包脚本；
-    
+
 * Linux C++，CGI，MySQL，HTML，JavaScript，CSS，Makefile，Shell
 
 ##### 库房管理系统（2013/12 ~ 2014/6）
 
     长期维护的项目，修改产品流转的流程，增加统计报表的功能；
-    优化用户操作界面，重构服务端数据存储模块，使用 pyExcelerator库生成报表；
-    
+    优化用户操作界面，重构服务端数据存储模块，使用 pyExcelerator 库生成报表；
+
 * Python，Pylons，JavaScript，ExtJS，MySQL
 
 ##### 生产系统终端软件开发（2012/5 ~ 2013/11）
 
     项目后期进入，完成通信和控制部分相关代码编写；
-    配合系统测试后期的 Bug定位及修改；提高了多线程编程的设计与开发能能力；
+    配合系统测试后期的 Bug 定位及修改；提高了多线程编程的设计与开发能能力；
 
 * VC++
- 
+
 ##### 企业级移动应用平台（2011/3 ~ 2011/9）
 
     在西门子实习时的项目，项目用于移动平台的数据推送、数据离线及数据同步；
     负责在代理服务器的 kernel 中增加一个 module，用于对用户访问的指定页面修改，使其具有数据离线功能；
-    编写指定的 Web 测试页，Android/iOS 测试程序； 
+    编写指定的 Web 测试页，Android / iOS 测试程序；
 
 * Linux C，Makefile
 
@@ -77,13 +77,13 @@ description: "个人信息"
 
     VC: 抽奖软件、番茄时钟、MatrixGame；
     python: 基于 scrapy 图片爬虫；
-    基于地理位置的打折信息展示：hackthon项目，使用了高德 API、BMOB提供的云服务端；
+    基于 LBS 的打折信息展示：hackthon项目，使用了高德 API、BMOB 提供的云服务端；
 
-        
-        
-            
-    
-    
+
+
+
+
+
 
 
 
@@ -101,7 +101,7 @@ description: "个人信息"
     * apache、nginx
 * 数据库
     * SQL: 熟悉 MySQL
-    * NoSQL: 了解 MonoDB
+    * NoSQL: 了解 MongoDB
 * 框架 / 库
     * C++：Boost、muduo
     * Python：Pylons
@@ -137,6 +137,3 @@ description: "个人信息"
 
 ## 书单
 [豆瓣书单](http://book.douban.com/people/14370518/)
-
-
-
