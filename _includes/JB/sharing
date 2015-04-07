@@ -2,7 +2,7 @@
 
 {% case site.JB.sharing.provider %}
 {% when "jiathis" %}
-  {% include JB/sharing_providers/jiathis %}
+  {% include JB/sharing_providers/jiathis.html %}
 {% endcase %}
 
 {% endif %}
