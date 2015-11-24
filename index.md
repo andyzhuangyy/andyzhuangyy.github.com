@@ -15,8 +15,8 @@ tagline: Supporting tagline
 ---
 ## TODO
 
-* a lot of things to do.
-* prepare to change a new job
-* learn source code
+* 微信公众号
+* gollum wiki. here
+* 开始写作
 
 ---
