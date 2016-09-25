@@ -4,7 +4,7 @@ permalink: /:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
-markdown: rdiscount
+markdown: kramdown
 #paginate: 5
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
@@ -12,8 +12,8 @@ markdown: rdiscount
 title : 庄子的记录
 tagline: zhuangyongyao
 #Site Tagline
-keywords: [zhuangyongyao,庄子,庄永耀,庄永耀的博客,zhuangyongyao的博客,c++,极客,程序员,互联网,技术,移动互联网]
-description: 庄永耀的博客,热爱技术热爱互联网热爱生活,专注于c++,服务器编程,有兴趣于移动app
+keywords: [zhuangyongyao,庄子,庄永耀,庄永耀的博客,zhuangyongyao的博客,c++,极客,程序员,互联网,技术,移动互联网, Java, 分布式,微服务,大数据,机器学习 ]
+description: 庄永耀的博客,热爱技术热爱互联网热爱生活,c++,服务器编程,有兴趣于移动app, Java, 分布式, 大数据,机器学习
 author :
   name : 庄永耀
   email : andyzyy@gmail.com
