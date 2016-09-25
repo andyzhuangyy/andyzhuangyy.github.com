@@ -9,6 +9,7 @@ CONFIG = {
   'themes' => File.join(SOURCE, "_includes", "themes"),
   'layouts' => File.join(SOURCE, "_layouts"),
   'posts' => File.join(SOURCE, "_posts"),
+  'posts_data' => File.join(SOURCE, "_includes", "data"),
   'post_ext' => "md",
   'theme_package_version' => "0.1.0"
 }
@@ -22,7 +23,8 @@ module JB
       :themes => "_includes/themes",
       :theme_assets => "assets/themes",
       :theme_packages => "_theme_packages",
-      :posts => "_posts"
+      :posts => "_posts",
+      :posts_data => "_include/data"
     }
     
     def self.base
@@ -55,12 +57,17 @@ task :post do
     puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
     exit -1
   end
-  filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
+  absolute_filename = "#{date}-#{slug}.#{CONFIG['post_ext']}"
+  filename = File.join(CONFIG['posts'], "#{absolute_filename}")
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
+  data_filename = File.join(CONFIG['posts_data'], "#{absolute_filename}")
+  if File.exist?(data_filename)
+    abort("rake aborted!") if ask("#{data_filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
   
-  puts "Creating new post: #{filename}"
+  puts "Creating new post: #{filename}, post data file: #{data_filename}"
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
@@ -70,6 +77,11 @@ task :post do
     post.puts "tags: #{tags}"
     post.puts "---"
     post.puts "{% include JB/setup %}"
+    post.puts "{% include data/#{absolute_filename} %}"
+  end
+  open(data_filename, 'w') do |post|
+    post.puts "#{title}"
+    post.puts "==="
   end
 end # task :post
 
