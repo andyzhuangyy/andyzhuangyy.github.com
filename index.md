@@ -18,5 +18,6 @@ tagline: Supporting tagline
 * 微信公众号
 * gollum wiki. here
 * 开始写作
+* 整理简历
 
 ---
