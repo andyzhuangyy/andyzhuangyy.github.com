@@ -16,9 +16,12 @@ tagline: Supporting tagline
 
 ## TODO
 
-* 微信公众号
 * gollum wiki. here
 * 开始写作
-* 整理简历
+* 让生活更加有节奏，坚持好习惯
+* 坚持阅读
+* 坚持跑步和健身
+* 记录上面的过程
+
 
 ---
