@@ -23,5 +23,8 @@ tagline: Supporting tagline
 * 坚持跑步和健身
 * 记录上面的过程
 
+## 收藏
+
+* (收藏夹)[2019/03/05/favorate]
 
 ---
